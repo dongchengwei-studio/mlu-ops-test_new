@@ -36,11 +36,7 @@ on:
 
 jobs:
   test:
-    strategy:
-      matrix:
-        runner: [mlu370-m8]
-        mlu_ops_version : [v1.0.0]
-    runs-on: [yellow]
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
