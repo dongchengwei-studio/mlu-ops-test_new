@@ -29,7 +29,7 @@
 #include "core/tensor.h"
 #include "core/type.h"
 #include "kernels/unary_op/unary_op_host.h"
-
+int a = 11123123;
 static void policyFunc(const mluOpHandle_t &handle,
                        const mluOpTensorDescriptor_t &desc, cnrtDim3_t *k_dim,
                        cnrtFunctionType_t *k_type) {
