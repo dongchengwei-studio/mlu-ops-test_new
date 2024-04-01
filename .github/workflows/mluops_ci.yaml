@@ -33,6 +33,9 @@ on:
       - 'requirements.txt'
       - '.github/workflows/mluops_all_system_ci.yaml'
       - '.github/workflows/daily.yaml'
+  pull_request_target:
+    branches: [master, r*]
+    types: [assigned, opened, synchronize, reopen]
 
 jobs:
   test:
